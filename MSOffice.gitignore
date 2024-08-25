@@ -26,3 +26,4 @@ Backup of *.doc*
 
 # Ignore ZIP files
 *.zip
+*.txt
