@@ -22,65 +22,68 @@ Prerequisites
 
 Dependencies
 
-The following are python version and libraries are required:
+Ensure you have the following installed:
+	•	Python: Version 3.8 or higher
+	•	Required Python libraries:
+	•	pandas
+	•	numpy
+	•	matplotlib
+	•	sklearn
+	•	gensim
+	•	transformers
 
-	•	Python 3.8+
-	•	Required libraries: pandas, numpy, matplotlib, sklearn, gensim, transformers
-
-
-Install all dependencies with the included requirements file via pip:
+Install all dependencies via the provided requirements file:
 
 pip install -r requirements.txt
 
-Files and Resources
+Additional Resources
 
-	•	Ensure custom_w2v_rf.bin is in the appropriate directory for Word2Vec-related scripts.
+	•	Ensure custom_w2v_rf.bin is placed in the appropriate directory for Word2Vec-related scripts.
 	•	FinBERT model weights are required for mainScript-FinBERT_annotated-.ipynb.
 
 Usage
 
-	1.	Data Processing
+1. Data Processing
+   
 	•	Use 10X_processor.ipynb or Stata_data_file_chunking.ipynb to prepare datasets for modeling.
+
 	•	For .dta files, refer to dta_splitting.ipynb.
-	2.	Model Training
+
+3. Model Training
+   
 	•	Word2Vec: Run mainScript-W2V_annotated.ipynb for training or fine-tuning Word2Vec models.
+
 	•	FinBERT: Use mainScript-FinBERT_annotated-.ipynb to train the FinBERT model on your dataset.
-	3.	Visualization
+
+5. Visualization
+   
 	•	Utilize plot_files_type.ipynb to create insightful plots of your processed data.
-	4.	Demo
-	•	Explore FinBERT-demo.ipynb for an example use case of FinBERT in text classification or sentiment analysis.
+
+6. Demo
+   
+	•	Explore FinBERT-demo.ipynb for a practical example of FinBERT in text classification or sentiment analysis.
 
 Key Features
+
 	•	Data Handling: Efficient processing of large datasets using Stata chunking and .dta file splitting.
+ 
 	•	Model Training: Preconfigured scripts for Word2Vec and FinBERT fine-tuning.
+ 
 	•	Visualization: Tools for data exploration and visualization.
+ 
 	•	Pre-trained Models: Includes a custom Word2Vec binary file (custom_w2v_rf.bin).
 
-Example Execution
 
-Word2Vec Annotation
-
-jupyter notebook mainScript-W2V_annotated.ipynb
-
-FinBERT Training
-
-jupyter notebook mainScript-FinBERT_annotated-.ipynb
-
-Visualization
-
-jupyter notebook plot_files_type.ipynb
 
 Authors
-	•	Your Name
-	•	Contributors: Mention contributors or team members here.
+
+	•	Emmanuel Mensah Boateng
+	•	Contributors: List additional contributors or team members here.
 
 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgments
-	•	Inspired by industry-leading tools in NLP and data engineering.
+
 	•	Special thanks to the open-source community for their contributions to Word2Vec and FinBERT.
-
-Let me know if you need further customization for this README file!
-
