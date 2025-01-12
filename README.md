@@ -33,9 +33,9 @@ Ensure you have the following installed:
 	•	transformers
 
 Install all dependencies via the provided requirements file:
-
+```
 pip install -r requirements.txt
-
+```
 Additional Resources
 
 	•	Ensure custom_w2v_rf.bin is placed in the appropriate directory for Word2Vec-related scripts.
