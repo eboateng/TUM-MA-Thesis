@@ -45,18 +45,19 @@ pip install -r requirements.txt
 ## Usage
 
 1. **Data Processing**
-   - Use `10X_processor.ipynb` or `Stata_data_file_chunking.ipynb` to prepare datasets for modeling.
+   - Use `10X_processor.ipynb` to prepare cleaned 10X filings from Loughran-MacDonald. [Source]([https://sraf.nd.edu/sec-edgar-data/cleaned-10x-files/])
+   - Use `Stata_data_file_chunking.ipynb` to prepare stock dta file
    - For `.dta` files, refer to `dta_splitting.ipynb`.
 
 2. **Model Training**
-   - **Word2Vec**: Run `mainScript-W2V_annotated.ipynb` for training or fine-tuning Word2Vec models.
-   - **FinBERT**: Use `mainScript-FinBERT_annotated-.ipynb` to train the FinBERT model on your dataset.
+   - **Word2Vec**: Run `mainScript-W2V_annotated.ipynb` for feature extraction, analysis and training with Word2Vec models.
+   - **FinBERT**: Use `mainScript-FinBERT_annotated-.ipynb` for feature extraction, analysis and training the FinBERT model on the dataset.
 
 3. **Visualization**
-   - Utilize `plot_files_type.ipynb` to create insightful plots of your processed data.
+   - `plot_files_type.ipynb` contains some scripts to create insightful plots of the data.
 
 4. **Demo**
-   - Explore `FinBERT-demo.ipynb` for a practical example of FinBERT in text classification or sentiment analysis.
+   - `FinBERT-demo.ipynb` is a practical example of FinBERT in text classification or sentiment analysis by Yang et. al.
 
 ---
 
